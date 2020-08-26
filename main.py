@@ -147,7 +147,7 @@ if __name__ == "__main__":
 
     for i, r in df_ehime.iterrows():
         folium.Marker(
-            location=[r["緯度"], r["経度"] + r["count"] * 0.0002],
+            location=[r["緯度"], r["経度"] + (r["count"] * 0.0005)],
             popup=folium.Popup(
                 f'<p>{r["管轄署"]}</p><p>{r["種別"]}</p><p>{r["日時"]}</p><p>{r["場所"]}</p><p>{r["状況"]}</p>',
                 max_width=300,
