@@ -76,6 +76,9 @@ if __name__ == "__main__":
 
     # 北新田がないので新田に訂正
     df["address"] = df["address"].str.replace("西条市新田字北新田", "西条市新田")
+    
+    # 重複をカウント
+    df["count"] = df.groupby("address").cumcount()
 
     # 種別の確認
     df["種別"].unique()
@@ -144,7 +147,7 @@ if __name__ == "__main__":
 
     for i, r in df_ehime.iterrows():
         folium.Marker(
-            location=[r["緯度"], r["経度"]],
+            location=[r["緯度"], r["経度"] + r["count"] * 0.0002],
             popup=folium.Popup(
                 f'<p>{r["管轄署"]}</p><p>{r["種別"]}</p><p>{r["日時"]}</p><p>{r["場所"]}</p><p>{r["状況"]}</p>',
                 max_width=300,
