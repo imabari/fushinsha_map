@@ -127,8 +127,15 @@ if __name__ == "__main__":
     # 住所から緯度経度をマージ
     df_ehime = df.merge(df_geo_ehime, how="left", on="address")
 
+    p_csv = pathlib.Path("map", "ehime.csv")
+    p_csv.parent.mkdir(parents=True, exist_ok=True)
+
+    df_ehime.to_csv(p_csv, encoding="utf_8_sig")
+
     # 欠損を確認
-    df_ehime[df_ehime.isnull().any(axis=1)]
+    df_nan = df_ehime[df_ehime.isnull().any(axis=1)]
+    p_nan = pathlib.Path("map", "nan.csv")
+    df_nan.to_csv(p_nan, encoding="utf_8_sig")
 
     # 欠損を削除
     df_ehime.dropna(inplace=True)
@@ -146,7 +153,6 @@ if __name__ == "__main__":
             icon=folium.Icon(color=r["color"]),
         ).add_to(map)
 
-    p = pathlib.Path("map", "index.html")
-    p.parent.mkdir(parents=True, exist_ok=True)
+    p_map = pathlib.Path("map", "index.html")
 
-    map.save(str(p))
+    map.save(str(p_map))
