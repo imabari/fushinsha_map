@@ -49,10 +49,12 @@ if __name__ == "__main__":
     df_tmp["概　要"] = df_tmp["概　要"].str.normalize("NFKC")
 
     # 項目ごとに分割
-    df = df_tmp["概　要"].str.extract("(.+)◆.+:(.+)◆.+:(.+)◆.+:(.+)◆.+:(.+)")
+    df = df_tmp["概　要"].str.split("◆", expand=True)
 
     # 列名変更
-    df.rename(columns={0: "管轄署", 1: "種別", 2: "日時", 3: "場所", 4: "状況"}, inplace=True)
+    df.rename(columns={0: "管轄署", 1: "種別", 2: "日時", 3: "場所", 4: "状況", 5: "特徴"}, inplace=True)
+    
+    df.replace("^(種別|日時|場所|状況|特徴):", "", regex=True, inplace=True)
 
     # 前後の空白文字を削除
     df = df.applymap(lambda s: s.strip())
@@ -149,7 +151,7 @@ if __name__ == "__main__":
         folium.Marker(
             location=[r["緯度"], r["経度"] + (r["count"] * 0.0002)],
             popup=folium.Popup(
-                f'<p>{r["管轄署"]}</p><p>{r["種別"]}</p><p>{r["日時"]}</p><p>{r["場所"]}</p><p>{r["状況"]}</p>',
+                f'<p>{r["管轄署"]}</p><p>{r["種別"]}</p><p>{r["日時"]}</p><p>{r["場所"]}</p><p>{r["状況"]}</p><p>{r["特徴"]}</p>',
                 max_width=300,
                 min_width=150,
             ),
