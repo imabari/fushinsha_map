@@ -144,20 +144,23 @@ if __name__ == "__main__":
 
     # 欠損を削除
     df_ehime.dropna(inplace=True)
-
+    
     map = folium.Map(location=[34.06604300, 132.99765800], zoom_start=10)
+
+    marker_cluster = plugins.MarkerCluster()
 
     for i, r in df_ehime.iterrows():
         folium.Marker(
-            location=[r["緯度"], r["経度"] + (r["count"] * 0.0002)],
+            location=[r["緯度"], r["経度"]],
             popup=folium.Popup(
                 f'<p>{r["管轄署"]}</p><p>{r["種別"]}</p><p>{r["日時"]}</p><p>{r["場所"]}</p><p>{r["状況"]}</p><p>{r["特徴"]}</p>',
                 max_width=300,
-                min_width=150,
             ),
             icon=folium.Icon(color=r["color"]),
-        ).add_to(map)
+        ).add_to(marker_cluster)
+
+    marker_cluster.add_to(map)
 
     p_map = pathlib.Path("map", "index.html")
-
+    
     map.save(str(p_map))
