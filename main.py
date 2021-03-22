@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 
 import folium
+from folium.plugins import MarkerCluster
 
 GEO_URL = "https://raw.githubusercontent.com/geolonia/japanese-addresses/master/data/latest.csv"
 
@@ -149,7 +150,7 @@ if __name__ == "__main__":
     
     map = folium.Map(location=[34.06604300, 132.99765800], zoom_start=10)
 
-    marker_cluster = plugins.MarkerCluster()
+    marker_cluster = MarkerCluster()
 
     for i, r in df_ehime.iterrows():
         folium.Marker(
