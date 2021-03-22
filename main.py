@@ -54,6 +54,8 @@ if __name__ == "__main__":
     # 列名変更
     df.rename(columns={0: "管轄署", 1: "種別", 2: "日時", 3: "場所", 4: "状況", 5: "特徴"}, inplace=True)
     
+    df.fillna("", inplace=True)
+    
     df.replace("^(種別|日時|場所|状況|特徴):", "", regex=True, inplace=True)
 
     # 前後の空白文字を削除
