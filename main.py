@@ -146,7 +146,7 @@ if __name__ == "__main__":
     df_nan.to_csv(p_nan, encoding="utf_8_sig")
 
     # 欠損を削除
-    df_ehime.dropna(inplace=True)
+    df_ehime.dropna(subset=["経度", "緯度"], how="any", inplace=True)
     
     map = folium.Map(location=[34.06604300, 132.99765800], zoom_start=10)
 
