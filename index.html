@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8ef33dc4d77647b39a3677e156fad4a8 {
+                #map_044d87f1c37f4a57a3bd1791e355344f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -38,13 +38,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_8ef33dc4d77647b39a3677e156fad4a8" ></div>
+            <div class="folium-map" id="map_044d87f1c37f4a57a3bd1791e355344f" ></div>
         
 </body>
 <script>    
     
-            var map_8ef33dc4d77647b39a3677e156fad4a8 = L.map(
-                "map_8ef33dc4d77647b39a3677e156fad4a8",
+            var map_044d87f1c37f4a57a3bd1791e355344f = L.map(
+                "map_044d87f1c37f4a57a3bd1791e355344f",
                 {
                     center: [34.066043, 132.997658],
                     crs: L.CRS.EPSG3857,
@@ -58,38 +58,63 @@
 
         
     
-            var tile_layer_4d0c69a271c7488bb96895f35468e3f4 = L.tileLayer(
+            var tile_layer_2f8439e5f3af49beb8aa719e3f098197 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_8ef33dc4d77647b39a3677e156fad4a8);
+            ).addTo(map_044d87f1c37f4a57a3bd1791e355344f);
         
     
-            var marker_cluster_9455754296584107a27d52bd6014477a = L.markerClusterGroup(
+            var marker_cluster_aace1d8212a34a819775a1fd0149d630 = L.markerClusterGroup(
                 {}
             );
-            map_8ef33dc4d77647b39a3677e156fad4a8.addLayer(marker_cluster_9455754296584107a27d52bd6014477a);
+            map_044d87f1c37f4a57a3bd1791e355344f.addLayer(marker_cluster_aace1d8212a34a819775a1fd0149d630);
         
     
-            var marker_b2bdf48526e844b59a037604cb9650f8 = L.marker(
+            var marker_be5e423a28d14df799e4564cf8e0cb5d = L.marker(
+                [33.817028, 132.74789],
+                {}
+            ).addTo(marker_cluster_aace1d8212a34a819775a1fd0149d630);
+        
+    
+            var icon_c821ca45ddcd4f00873a5150a3ff1c65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_be5e423a28d14df799e4564cf8e0cb5d.setIcon(icon_c821ca45ddcd4f00873a5150a3ff1c65);
+        
+    
+        var popup_9a70315dec2e43a7a7df63d3d58bce73 = L.popup({"maxWidth": 300});
+
+        
+            var html_e482d68c8246459ea1a49bb4521969d6 = $(`<div id="html_e482d68c8246459ea1a49bb4521969d6" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>声かけ</p><p>令和4年1月9日(日)午後0時10分ころ</p><p>松山市保免中二丁目の路上</p><p>女子中学生2名が歩行中、対向から来た自転車乗車の男に「最近の人達は頭がおかしい。」等と意味不明な話を約30分されたもの。</p><p>60〜70歳位、やせ型、身長170センチ位、白髪、黒色ジャンパー、黒色ズボン、白色の自転車利用、マスクなし、黒色靴着用、ボディバッグ・ビニール袋所持、酒臭なし、呂律が回っていない</p></div>`)[0];
+            popup_9a70315dec2e43a7a7df63d3d58bce73.setContent(html_e482d68c8246459ea1a49bb4521969d6);
+        
+
+        marker_be5e423a28d14df799e4564cf8e0cb5d.bindPopup(popup_9a70315dec2e43a7a7df63d3d58bce73)
+        ;
+
+        
+    
+    
+            var marker_e2f9a3f063594dc3ac7f024b302526a7 = L.marker(
                 [33.963258, 133.536488],
                 {}
-            ).addTo(marker_cluster_9455754296584107a27d52bd6014477a);
+            ).addTo(marker_cluster_aace1d8212a34a819775a1fd0149d630);
         
     
-            var icon_b639c8ef001a4b60ae3106cece9cb430 = L.AwesomeMarkers.icon(
+            var icon_3866be3d4c6847beba0614747a3dcd25 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_b2bdf48526e844b59a037604cb9650f8.setIcon(icon_b639c8ef001a4b60ae3106cece9cb430);
+            marker_e2f9a3f063594dc3ac7f024b302526a7.setIcon(icon_3866be3d4c6847beba0614747a3dcd25);
         
     
-        var popup_b980850328474938839cef0ced5f21f2 = L.popup({"maxWidth": 300});
+        var popup_6900818a15d449f891e7b15fd9d2eac6 = L.popup({"maxWidth": 300});
 
         
-            var html_dc48a4d23636499f93e59b989d8a8f87 = $(`<div id="html_dc48a4d23636499f93e59b989d8a8f87" style="width: 100.0%; height: 100.0%;"><p>四国中央署管内</p><p>つきまとい</p><p>令和4年1月3日(月)午後3時50分ころ</p><p>四国中央市中之庄町の路上</p><p>女性が未就学女児と歩行中、男から手を振られ、後をつけられたもの。さらに、女性が通行人と話をしていたところ、女児が同男から「うちの子なんや。」と声を掛けられている。</p><p>70歳位、中肉、紺色ジャージ、ベージュ色長ズボン、白色キャップ帽着用、木製バット所持</p></div>`)[0];
-            popup_b980850328474938839cef0ced5f21f2.setContent(html_dc48a4d23636499f93e59b989d8a8f87);
+            var html_9093368c5d2044b194f00b918a7bd9f4 = $(`<div id="html_9093368c5d2044b194f00b918a7bd9f4" style="width: 100.0%; height: 100.0%;"><p>四国中央署管内</p><p>つきまとい</p><p>令和4年1月3日(月)午後3時50分ころ</p><p>四国中央市中之庄町の路上</p><p>女性が未就学女児と歩行中、男から手を振られ、後をつけられたもの。さらに、女性が通行人と話をしていたところ、女児が同男から「うちの子なんや。」と声を掛けられている。</p><p>70歳位、中肉、紺色ジャージ、ベージュ色長ズボン、白色キャップ帽着用、木製バット所持</p></div>`)[0];
+            popup_6900818a15d449f891e7b15fd9d2eac6.setContent(html_9093368c5d2044b194f00b918a7bd9f4);
         
 
-        marker_b2bdf48526e844b59a037604cb9650f8.bindPopup(popup_b980850328474938839cef0ced5f21f2)
+        marker_e2f9a3f063594dc3ac7f024b302526a7.bindPopup(popup_6900818a15d449f891e7b15fd9d2eac6)
         ;
 
         
