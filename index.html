@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ae6bb8d5ceb28e85e5abd7460a54c6a9 {
+                #map_d9f009a239a2c0347d897f4498b6d015 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -38,13 +38,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_ae6bb8d5ceb28e85e5abd7460a54c6a9" ></div>
+            <div class="folium-map" id="map_d9f009a239a2c0347d897f4498b6d015" ></div>
         
 </body>
 <script>    
     
-            var map_ae6bb8d5ceb28e85e5abd7460a54c6a9 = L.map(
-                "map_ae6bb8d5ceb28e85e5abd7460a54c6a9",
+            var map_d9f009a239a2c0347d897f4498b6d015 = L.map(
+                "map_d9f009a239a2c0347d897f4498b6d015",
                 {
                     center: [34.066043, 132.997658],
                     crs: L.CRS.EPSG3857,
@@ -58,213 +58,488 @@
 
         
     
-            var tile_layer_b550f4a89aa1b3cdab66f82518d49328 = L.tileLayer(
+            var tile_layer_8f204e0e912762fc776c26fcf168862e = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_ae6bb8d5ceb28e85e5abd7460a54c6a9);
+            ).addTo(map_d9f009a239a2c0347d897f4498b6d015);
         
     
-            var marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5 = L.markerClusterGroup(
+            var marker_cluster_b5bfca988636bef11ef00f4b1a3c3160 = L.markerClusterGroup(
                 {}
             );
-            map_ae6bb8d5ceb28e85e5abd7460a54c6a9.addLayer(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
+            map_d9f009a239a2c0347d897f4498b6d015.addLayer(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
         
     
-            var marker_cf51417bf383bf6bdbe7b64b17cc63cf = L.marker(
-                [33.826837, 132.790334],
+            var marker_0e2e28b32627475690427bb6079b5dae = L.marker(
+                [33.753461, 132.703302],
                 {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
         
     
-            var icon_b4c748caf371bdeaf0581660b5074e35 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            var icon_86a83ad98b3b11e22d48c6bbab2751b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
             );
-            marker_cf51417bf383bf6bdbe7b64b17cc63cf.setIcon(icon_b4c748caf371bdeaf0581660b5074e35);
+            marker_0e2e28b32627475690427bb6079b5dae.setIcon(icon_86a83ad98b3b11e22d48c6bbab2751b1);
         
     
-        var popup_79ec8bf8b4d626b2f4b0f5eb3b726295 = L.popup({"maxWidth": 300});
+        var popup_3dc7a57fea76e6c8e7ab2a2fbec00d75 = L.popup({"maxWidth": 300});
 
         
-            var html_1e7e54c4ada62ab94955bde9e815a9b3 = $(`<div id="html_1e7e54c4ada62ab94955bde9e815a9b3" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>つきまとい</p><p>令和4年6月27日(月) 午後4時40分ころ</p><p>松山市松末一丁目の路上</p><p>小学生男児が歩行中、両手を挙げた状態の男から、走って追いかけられたもの。</p><p>40〜50歳位、肥満、身長170センチ位、黒色短髪、黒色長袖、黒色長ズボン、ベージュ色トートバッグ所持、徒歩</p></div>`)[0];
-            popup_79ec8bf8b4d626b2f4b0f5eb3b726295.setContent(html_1e7e54c4ada62ab94955bde9e815a9b3);
+            var html_0e3bec1af629a58aa26c7c6843c1175c = $(`<div id="html_0e3bec1af629a58aa26c7c6843c1175c" style="width: 100.0%; height: 100.0%;"><p>伊予署管内</p><p>写真撮影</p><p>令和4年7月4日(月) 午後3時ころ</p><p>伊予市米湊の店舗内</p><p>女性が子供を連れ店内にいたところ、男から何度も付近をうろつかれた上、スマートフォンを向けられたもの。</p><p>50〜70歳位、中肉、身長160センチ位、白髪混じりの短髪、赤色ポロシャツ、黒色長ズボン、白色マスク着用、メガネなし、黒色様バッグ・黒色カバー付きスマートフォン所持</p></div>`)[0];
+            popup_3dc7a57fea76e6c8e7ab2a2fbec00d75.setContent(html_0e3bec1af629a58aa26c7c6843c1175c);
         
 
-        marker_cf51417bf383bf6bdbe7b64b17cc63cf.bindPopup(popup_79ec8bf8b4d626b2f4b0f5eb3b726295)
+        marker_0e2e28b32627475690427bb6079b5dae.bindPopup(popup_3dc7a57fea76e6c8e7ab2a2fbec00d75)
         ;
 
         
     
     
-            var marker_303d1464f52879ebbeb797fbbff58cb8 = L.marker(
-                [33.900906, 132.722481],
+            var marker_2ebd4447d8b17cf7ec612cfed6748ef1 = L.marker(
+                [33.757102, 132.705117],
                 {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
         
     
-            var icon_0b2bf673096ff74d1eec41ce9888a671 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "\u5199\u771f\u64ae\u5f71\u7b49", "prefix": "glyphicon"}
+            var icon_284b05a1c823be750c60b262d5315586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
             );
-            marker_303d1464f52879ebbeb797fbbff58cb8.setIcon(icon_0b2bf673096ff74d1eec41ce9888a671);
+            marker_2ebd4447d8b17cf7ec612cfed6748ef1.setIcon(icon_284b05a1c823be750c60b262d5315586);
         
     
-        var popup_0c8c3306bb44dbe0081051ac8690b00e = L.popup({"maxWidth": 300});
+        var popup_86428e0588b070e19407d507dd7ebeac = L.popup({"maxWidth": 300});
 
         
-            var html_55b4d7a7f6ef0fab62bda06c9538706d = $(`<div id="html_55b4d7a7f6ef0fab62bda06c9538706d" style="width: 100.0%; height: 100.0%;"><p>松山西署管内</p><p>写真撮影等</p><p>令和4年6月27日(月) 午後3時30分ころ</p><p>松山市勝岡町の路上</p><p>小学生女児が歩行中、対向から来た男から、すれ違いざまに「こんにちは」と声をかけられた後、首から下げていたデジタルカメラを向けられたもの。</p><p>40〜60歳位、小肥、身長160〜170センチ位、黒色短髪、黒色様半袖Tシャツ、灰色様半ズボン、メガネあり、首から黒色デジタルカメラ(黒色ストラップ付)を下げている、白色ヘッドホン様のもの装着、徒歩</p></div>`)[0];
-            popup_0c8c3306bb44dbe0081051ac8690b00e.setContent(html_55b4d7a7f6ef0fab62bda06c9538706d);
+            var html_f9465ab2946881f7144a46f1937f5c4e = $(`<div id="html_f9465ab2946881f7144a46f1937f5c4e" style="width: 100.0%; height: 100.0%;"><p>伊予署管内</p><p>写真撮影</p><p>令和4年7月4日(月) 午後3時ころ</p><p>伊予市米湊の店舗内</p><p>女性が子供を連れ店内にいたところ、男から何度も付近をうろつかれた上、スマートフォンを向けられたもの。</p><p>50〜70歳位、中肉、身長160センチ位、白髪混じりの短髪、赤色ポロシャツ、黒色長ズボン、白色マスク着用、メガネなし、黒色様バッグ・黒色カバー付きスマートフォン所持</p></div>`)[0];
+            popup_86428e0588b070e19407d507dd7ebeac.setContent(html_f9465ab2946881f7144a46f1937f5c4e);
         
 
-        marker_303d1464f52879ebbeb797fbbff58cb8.bindPopup(popup_0c8c3306bb44dbe0081051ac8690b00e)
+        marker_2ebd4447d8b17cf7ec612cfed6748ef1.bindPopup(popup_86428e0588b070e19407d507dd7ebeac)
         ;
 
         
     
     
-            var marker_7e8021707c64abd09f8183dcd5d24852 = L.marker(
-                [33.827813, 132.733419],
+            var marker_dbe4935028d0d49d9c5c50edb8506dc4 = L.marker(
+                [33.789207, 132.791713],
                 {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
         
     
-            var icon_b254920b64e0672e4ada42da993b27cd = L.AwesomeMarkers.icon(
+            var icon_9ef54abefb413d3bfdc5a73cbbf9e6d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dbe4935028d0d49d9c5c50edb8506dc4.setIcon(icon_9ef54abefb413d3bfdc5a73cbbf9e6d6);
+        
+    
+        var popup_052e5204eb2faf0aaebf313e87141a20 = L.popup({"maxWidth": 300});
+
+        
+            var html_737913f6d55d14007506d4f538680b92 = $(`<div id="html_737913f6d55d14007506d4f538680b92" style="width: 100.0%; height: 100.0%;"><p>松山南署管内</p><p>暴行</p><p>令和4年7月3日(日) 午後3時ころ</p><p>松山市森松町の路上</p><p>男子中学生3名が自転車で走行中、徒歩の男から因縁をつけられ、唾を吐きかけられたもの。</p><p>50〜60歳位、中肉、身長170センチ位、白髪混じりの黒色短髪、水色シャツ、徒歩</p></div>`)[0];
+            popup_052e5204eb2faf0aaebf313e87141a20.setContent(html_737913f6d55d14007506d4f538680b92);
+        
+
+        marker_dbe4935028d0d49d9c5c50edb8506dc4.bindPopup(popup_052e5204eb2faf0aaebf313e87141a20)
+        ;
+
+        
+    
+    
+            var marker_9ecef837cf472e7f45638498e5178045 = L.marker(
+                [34.036394, 132.985403],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_adc0c3e65e51b7038052cf63e0034a79 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
             );
-            marker_7e8021707c64abd09f8183dcd5d24852.setIcon(icon_b254920b64e0672e4ada42da993b27cd);
+            marker_9ecef837cf472e7f45638498e5178045.setIcon(icon_adc0c3e65e51b7038052cf63e0034a79);
         
     
-        var popup_9ef451ad4b60a18b78b99f723391b974 = L.popup({"maxWidth": 300});
+        var popup_6c76958f2c802155e5b178ed31913346 = L.popup({"maxWidth": 300});
 
         
-            var html_7b6ab3e5ef0ec6d94ff832e747e70e72 = $(`<div id="html_7b6ab3e5ef0ec6d94ff832e747e70e72" style="width: 100.0%; height: 100.0%;"><p>松山西署管内</p><p>不審者</p><p>令和4年6月26日(日) 午後4時ころ</p><p>松山市空港通五丁目の路上</p><p>女性が車で移動中、付近をうろついていた男から凝視されたもの。</p><p>40歳位、やせ型、肩までの長さの黒髪、上衣:黒と白色のボーダー柄、濃い色のジーンズ、透明ビニール袋所持、徒歩</p></div>`)[0];
-            popup_9ef451ad4b60a18b78b99f723391b974.setContent(html_7b6ab3e5ef0ec6d94ff832e747e70e72);
+            var html_97402437433679e0a40d9e7d75532322 = $(`<div id="html_97402437433679e0a40d9e7d75532322" style="width: 100.0%; height: 100.0%;"><p>今治署管内</p><p>不審者</p><p>令和4年7月1日(金) 午後5時ころ</p><p>今治市徳重の路上</p><p>自転車に乗った男が、アパート敷地内をジロジロ見ながら、うろついていたもの。</p><p>60〜80歳位、中肉、白髪混じりの短髪、半袖シャツ、長ズボン、自転車使用(一文字ハンドル)</p></div>`)[0];
+            popup_6c76958f2c802155e5b178ed31913346.setContent(html_97402437433679e0a40d9e7d75532322);
         
 
-        marker_7e8021707c64abd09f8183dcd5d24852.bindPopup(popup_9ef451ad4b60a18b78b99f723391b974)
+        marker_9ecef837cf472e7f45638498e5178045.bindPopup(popup_6c76958f2c802155e5b178ed31913346)
         ;
 
         
     
     
-            var marker_4481817f95bf42cb18d3ae97b1dd0845 = L.marker(
-                [34.056517, 133.011944],
+            var marker_6def188f2b18be109694c89152bc4f84 = L.marker(
+                [33.819919, 132.813414],
                 {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
         
     
-            var icon_619e458baae0ca2dad346f035a6be179 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
-            );
-            marker_4481817f95bf42cb18d3ae97b1dd0845.setIcon(icon_619e458baae0ca2dad346f035a6be179);
-        
-    
-        var popup_aa695691473b2b4b5348d240722660d5 = L.popup({"maxWidth": 300});
-
-        
-            var html_e2592bae71d619cb3c7f009fb1b05ec6 = $(`<div id="html_e2592bae71d619cb3c7f009fb1b05ec6" style="width: 100.0%; height: 100.0%;"><p>今治署管内</p><p>身体露出</p><p>令和4年6月25日(土) 午前10時30分ころ</p><p>今治市北鳥生町一丁目の屋外施設</p><p>男が、屋外施設でズボンを足元まで下ろしていたもの。</p><p>30歳位、中肉、黒髪、白色Tシャツ、白色半ズボン、帽子・メガネ・マスクなし、徒歩</p></div>`)[0];
-            popup_aa695691473b2b4b5348d240722660d5.setContent(html_e2592bae71d619cb3c7f009fb1b05ec6);
-        
-
-        marker_4481817f95bf42cb18d3ae97b1dd0845.bindPopup(popup_aa695691473b2b4b5348d240722660d5)
-        ;
-
-        
-    
-    
-            var marker_ca1fb73f7196bf7fe301265b085a328f = L.marker(
-                [33.828988, 132.761832],
-                {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
-        
-    
-            var icon_795284a97933878cdacb6d1782e88242 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "\u5199\u771f\u64ae\u5f71\u7b49", "prefix": "glyphicon"}
-            );
-            marker_ca1fb73f7196bf7fe301265b085a328f.setIcon(icon_795284a97933878cdacb6d1782e88242);
-        
-    
-        var popup_3168ad5f2449a7bf660b3e8471b726f3 = L.popup({"maxWidth": 300});
-
-        
-            var html_4d4766325b870629394b41c4cb7fe410 = $(`<div id="html_4d4766325b870629394b41c4cb7fe410" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>写真撮影等</p><p>令和4年6月25日(土) 午前9時35分ころ</p><p>松山市小栗四丁目の路上</p><p>小学生男児が移動中、道路沿いのアパート敷地内に立つ男から、スマートフォンを向けられ撮影されたもの。</p><p>20〜30歳位、中肉、身長160センチ位、黒色半袖Tシャツ、黒色長ズボン、鼻の下にできものがある、スマートフォン(白色、三つ目のカメラレンズ)所持、黒縁メガネ着用、徒歩</p></div>`)[0];
-            popup_3168ad5f2449a7bf660b3e8471b726f3.setContent(html_4d4766325b870629394b41c4cb7fe410);
-        
-
-        marker_ca1fb73f7196bf7fe301265b085a328f.bindPopup(popup_3168ad5f2449a7bf660b3e8471b726f3)
-        ;
-
-        
-    
-    
-            var marker_9ef284cc950161a676271897ef9c6a17 = L.marker(
-                [33.850954, 132.727614],
-                {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
-        
-    
-            var icon_b8dbe27aa03a2687bea7c8c7e5825516 = L.AwesomeMarkers.icon(
+            var icon_9bde0b67a974d819706c3d1ce25db979 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
             );
-            marker_9ef284cc950161a676271897ef9c6a17.setIcon(icon_b8dbe27aa03a2687bea7c8c7e5825516);
+            marker_6def188f2b18be109694c89152bc4f84.setIcon(icon_9bde0b67a974d819706c3d1ce25db979);
         
     
-        var popup_4c2a19031bebf38c479f4d8fb57487a9 = L.popup({"maxWidth": 300});
+        var popup_b8c8762358dd257fc53507a6c9f5490e = L.popup({"maxWidth": 300});
 
         
-            var html_3bf19759b83c3052710c08573fb69020 = $(`<div id="html_3bf19759b83c3052710c08573fb69020" style="width: 100.0%; height: 100.0%;"><p>松山西署管内</p><p>声かけ</p><p>令和4年6月24日(金) 午後7時ころ</p><p>松山市山西町の路上</p><p>女子中学生が路上にいたところ、自転車に乗車の男から「おじさんのこと知っとる?」「この辺に住んどるんかなと思って。じゃあ。」と声をかけられたもの。</p><p>60歳位、小肥、身長160センチ位、白髪、上下クリーム色作業着様つなぎ、ハット帽着用、色黒、顔に深いしわ、動きが遅くゆっくり歩く、自転車使用(前後カゴ付き(いずれかが茶色のカゴ、カバー付き))</p></div>`)[0];
-            popup_4c2a19031bebf38c479f4d8fb57487a9.setContent(html_3bf19759b83c3052710c08573fb69020);
+            var html_a2548e8680e9fb04cbe705d2c9621ed1 = $(`<div id="html_a2548e8680e9fb04cbe705d2c9621ed1" style="width: 100.0%; height: 100.0%;"><p>松山南署管内</p><p>声かけ</p><p>令和4年7月1日(金) 午後3時50分ころ</p><p>松山市鷹子町の路上</p><p>小学生数名が歩行中、自転車に乗った男から「何小の何年生?」と声をかけられたもの。同男は、他の小学生にも声をかけていた。</p><p>30歳位、白色シャツ、黒色ズボン、レジ袋所持、自転車使用</p></div>`)[0];
+            popup_b8c8762358dd257fc53507a6c9f5490e.setContent(html_a2548e8680e9fb04cbe705d2c9621ed1);
         
 
-        marker_9ef284cc950161a676271897ef9c6a17.bindPopup(popup_4c2a19031bebf38c479f4d8fb57487a9)
+        marker_6def188f2b18be109694c89152bc4f84.bindPopup(popup_b8c8762358dd257fc53507a6c9f5490e)
         ;
 
         
     
     
-            var marker_1c69fc3f4915434700fbfb0a2e9f8fdd = L.marker(
+            var marker_658995078560ce5c1e6c4a2c1ed18b01 = L.marker(
+                [33.986668, 133.547201],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_39187bebe78a733853fdf835e2b1a566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_658995078560ce5c1e6c4a2c1ed18b01.setIcon(icon_39187bebe78a733853fdf835e2b1a566);
+        
+    
+        var popup_a500e912fe0ba7e47fa5a0fdf7a70f93 = L.popup({"maxWidth": 300});
+
+        
+            var html_3cb47d1eeafa141d69fc462025ee2c17 = $(`<div id="html_3cb47d1eeafa141d69fc462025ee2c17" style="width: 100.0%; height: 100.0%;"><p>四国中央署管内</p><p>つきまとい</p><p>令和4年6月30日(木) 午後8時30分ころ</p><p>四国中央市三島宮川一丁目の施設敷地内</p><p>女子高校生2名が施設敷地内を歩行中、徒歩の男からつきまとわれ、ズボンの上から下半身を触る様子を見せつけられたもの。</p><p>20歳位、中肉、身長165センチ位、緑色無地の半袖、黒色長ズボン、青色キャップ帽・黒色マスク・黒色靴着用、徒歩</p></div>`)[0];
+            popup_a500e912fe0ba7e47fa5a0fdf7a70f93.setContent(html_3cb47d1eeafa141d69fc462025ee2c17);
+        
+
+        marker_658995078560ce5c1e6c4a2c1ed18b01.bindPopup(popup_a500e912fe0ba7e47fa5a0fdf7a70f93)
+        ;
+
+        
+    
+    
+            var marker_5bf6d9c0d97b092bc0e88237e161a752 = L.marker(
+                [33.845331, 132.773986],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_f42e3cf5cfb941122358c133845f1455 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5bf6d9c0d97b092bc0e88237e161a752.setIcon(icon_f42e3cf5cfb941122358c133845f1455);
+        
+    
+        var popup_060164332ed75863fc44ff19a52d589a = L.popup({"maxWidth": 300});
+
+        
+            var html_6745044b1239ae52345cf99bd38297ea = $(`<div id="html_6745044b1239ae52345cf99bd38297ea" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>不審者</p><p>令和4年6月29日(水) 午後6時ころ</p><p>松山市東雲町の屋外施設</p><p>女性が子供と屋外施設にいたところ、男がトイレ内や木の陰に隠れるなどの挙動不審な行動をしながら、屋外施設で遊ぶ小学生を凝視していたもの。</p><p>20〜40歳位、中肉、上下明るい灰色の服、徒歩</p></div>`)[0];
+            popup_060164332ed75863fc44ff19a52d589a.setContent(html_6745044b1239ae52345cf99bd38297ea);
+        
+
+        marker_5bf6d9c0d97b092bc0e88237e161a752.bindPopup(popup_060164332ed75863fc44ff19a52d589a)
+        ;
+
+        
+    
+    
+            var marker_582ea89f2bae1eabc374a64fe18b72cd = L.marker(
+                [33.857631, 132.756226],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_4e9cff30d13f5bea338c4688ac05a19e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_582ea89f2bae1eabc374a64fe18b72cd.setIcon(icon_4e9cff30d13f5bea338c4688ac05a19e);
+        
+    
+        var popup_6e70013f2cae9fd7f33d37e9816ac2dd = L.popup({"maxWidth": 300});
+
+        
+            var html_247f23d148615eee5178a75f64a61793 = $(`<div id="html_247f23d148615eee5178a75f64a61793" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>暴行</p><p>令和4年6月29日(水) 午後4時50分ころ</p><p>松山市山越一丁目の路上</p><p>女子中学生が歩行中、自転車に乗った男から、すれ違いざまに唾をかけられたもの。</p><p>40〜65歳位、白色長髪、紺色長袖ナイロン製、灰色ナイロン製長ズボン、色黒、黒色キャップ帽着用、黒色丸型リュックサック所持、軽快兼用自転車使用(銀色、前カゴ付き)</p></div>`)[0];
+            popup_6e70013f2cae9fd7f33d37e9816ac2dd.setContent(html_247f23d148615eee5178a75f64a61793);
+        
+
+        marker_582ea89f2bae1eabc374a64fe18b72cd.bindPopup(popup_6e70013f2cae9fd7f33d37e9816ac2dd)
+        ;
+
+        
+    
+    
+            var marker_bc3def1c30ba472fda24d048a0193da3 = L.marker(
+                [33.804652, 132.811203],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_7b7cf38cedaddb1a58f9c5c71d5bc4d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bc3def1c30ba472fda24d048a0193da3.setIcon(icon_7b7cf38cedaddb1a58f9c5c71d5bc4d1);
+        
+    
+        var popup_090f5ef9516f28e08ba74377df0feeaa = L.popup({"maxWidth": 300});
+
+        
+            var html_6877f3833ead4bb9ca407d9db38c5d61 = $(`<div id="html_6877f3833ead4bb9ca407d9db38c5d61" style="width: 100.0%; height: 100.0%;"><p>松山南署管内</p><p>身体露出</p><p>令和4年6月29日(水) 午後3時30分ころ</p><p>松山市久米窪田町の路上</p><p>小学生女児2名が歩行中、対向から歩いて来た男が、下半身を露出させていたもの。</p><p>30歳位、やせ型、身長175センチ位、黒色様の髪、白色様半袖Tシャツ、長ズボン、白色マスク・白色キャップ帽着用、徒歩</p></div>`)[0];
+            popup_090f5ef9516f28e08ba74377df0feeaa.setContent(html_6877f3833ead4bb9ca407d9db38c5d61);
+        
+
+        marker_bc3def1c30ba472fda24d048a0193da3.bindPopup(popup_090f5ef9516f28e08ba74377df0feeaa)
+        ;
+
+        
+    
+    
+            var marker_0335918ce532ef3455c88f9ee0cc5510 = L.marker(
+                [33.928571, 133.183796],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_dae91d0d6b2b07ac81e14b7f83435239 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0335918ce532ef3455c88f9ee0cc5510.setIcon(icon_dae91d0d6b2b07ac81e14b7f83435239);
+        
+    
+        var popup_bd041885c93ee3a22e2e0f8cb795e792 = L.popup({"maxWidth": 300});
+
+        
+            var html_f36cddd45637e7d4a9b8c0c0ac601705 = $(`<div id="html_f36cddd45637e7d4a9b8c0c0ac601705" style="width: 100.0%; height: 100.0%;"><p>西条署管内</p><p>声かけ</p><p>令和4年6月29日(水) 午前7時5分ころ</p><p>西条市朔日市の路上</p><p>小学生男児が家族と一緒に歩行中、徒歩の女から「勉強教えてあげようか?」などと声をかけられたもの。</p><p>35〜40歳位、小肥、身長165cm位、黒髪ショートカット、上衣:赤色Tシャツ(大きめサイズ)、下衣:黒色長ズボン(ゆったりした感じ)、メガネ・マスクなし、徒歩</p></div>`)[0];
+            popup_bd041885c93ee3a22e2e0f8cb795e792.setContent(html_f36cddd45637e7d4a9b8c0c0ac601705);
+        
+
+        marker_0335918ce532ef3455c88f9ee0cc5510.bindPopup(popup_bd041885c93ee3a22e2e0f8cb795e792)
+        ;
+
+        
+    
+    
+            var marker_1df33a879ed022b9f4e5e18e25af8e13 = L.marker(
+                [34.206212, 133.111833],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_3bb8b809406cfcdabbd11c68d9a65520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "\u5199\u771f\u64ae\u5f71\u7b49", "prefix": "glyphicon"}
+            );
+            marker_1df33a879ed022b9f4e5e18e25af8e13.setIcon(icon_3bb8b809406cfcdabbd11c68d9a65520);
+        
+    
+        var popup_e82cc4583f4e03da8f91f6e6c722f9eb = L.popup({"maxWidth": 300});
+
+        
+            var html_dd449ad3c48cde9e6155a0644874fae7 = $(`<div id="html_dd449ad3c48cde9e6155a0644874fae7" style="width: 100.0%; height: 100.0%;"><p>伯方署管内</p><p>写真撮影等</p><p>令和4年6月28日(火) 午後8時40分ころ</p><p>今治市伯方町木浦甲の路上</p><p>女性が子供と車で走行中、路上に立っていた男から、ニヤニヤしながら携帯電話機を向けられたもの。</p><p>20歳位、中肉、上衣:黒色長袖、下衣:黒色長ズボン、深緑色帽子着用、携帯電話機所持、徒歩</p></div>`)[0];
+            popup_e82cc4583f4e03da8f91f6e6c722f9eb.setContent(html_dd449ad3c48cde9e6155a0644874fae7);
+        
+
+        marker_1df33a879ed022b9f4e5e18e25af8e13.bindPopup(popup_e82cc4583f4e03da8f91f6e6c722f9eb)
+        ;
+
+        
+    
+    
+            var marker_b9422e1df9e954bd591d3f1fa01fccc0 = L.marker(
+                [33.826837, 132.790334],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_96dace8e5612119498dadb17770eb270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9422e1df9e954bd591d3f1fa01fccc0.setIcon(icon_96dace8e5612119498dadb17770eb270);
+        
+    
+        var popup_19feca9d27b29fdf3e08f78d672fc52a = L.popup({"maxWidth": 300});
+
+        
+            var html_09b759c06e70c2701c9fe461443fef38 = $(`<div id="html_09b759c06e70c2701c9fe461443fef38" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>つきまとい</p><p>令和4年6月27日(月) 午後4時40分ころ</p><p>松山市松末一丁目の路上</p><p>小学生男児が歩行中、両手を挙げた状態の男から、走って追いかけられたもの。</p><p>40〜50歳位、肥満、身長170センチ位、黒色短髪、黒色長袖、黒色長ズボン、ベージュ色トートバッグ所持、徒歩</p></div>`)[0];
+            popup_19feca9d27b29fdf3e08f78d672fc52a.setContent(html_09b759c06e70c2701c9fe461443fef38);
+        
+
+        marker_b9422e1df9e954bd591d3f1fa01fccc0.bindPopup(popup_19feca9d27b29fdf3e08f78d672fc52a)
+        ;
+
+        
+    
+    
+            var marker_d347c462602b369ea4bd812508c9049f = L.marker(
+                [33.900906, 132.722481],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_fbb8022535a46ffe4bf58456e823d385 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "\u5199\u771f\u64ae\u5f71\u7b49", "prefix": "glyphicon"}
+            );
+            marker_d347c462602b369ea4bd812508c9049f.setIcon(icon_fbb8022535a46ffe4bf58456e823d385);
+        
+    
+        var popup_5d82e980ee455bb7fe6c107cc42457a3 = L.popup({"maxWidth": 300});
+
+        
+            var html_6bd8f4fd74c216b100ed26668fd7239d = $(`<div id="html_6bd8f4fd74c216b100ed26668fd7239d" style="width: 100.0%; height: 100.0%;"><p>松山西署管内</p><p>写真撮影等</p><p>令和4年6月27日(月) 午後3時30分ころ</p><p>松山市勝岡町の路上</p><p>小学生女児が歩行中、対向から来た男から、すれ違いざまに「こんにちは」と声をかけられた後、首から下げていたデジタルカメラを向けられたもの。</p><p>40〜60歳位、小肥、身長160〜170センチ位、黒色短髪、黒色様半袖Tシャツ、灰色様半ズボン、メガネあり、首から黒色デジタルカメラ(黒色ストラップ付)を下げている、白色ヘッドホン様のもの装着、徒歩</p></div>`)[0];
+            popup_5d82e980ee455bb7fe6c107cc42457a3.setContent(html_6bd8f4fd74c216b100ed26668fd7239d);
+        
+
+        marker_d347c462602b369ea4bd812508c9049f.bindPopup(popup_5d82e980ee455bb7fe6c107cc42457a3)
+        ;
+
+        
+    
+    
+            var marker_02facd649f4a08f803703d71886d51f5 = L.marker(
+                [33.827813, 132.733419],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_1512fab66ab7587befdae0f4bfc80806 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_02facd649f4a08f803703d71886d51f5.setIcon(icon_1512fab66ab7587befdae0f4bfc80806);
+        
+    
+        var popup_b3efa45948a7030e9872f2d8fcbb9fdd = L.popup({"maxWidth": 300});
+
+        
+            var html_4ea4520403c66c8e7f078e5a3a130bc0 = $(`<div id="html_4ea4520403c66c8e7f078e5a3a130bc0" style="width: 100.0%; height: 100.0%;"><p>松山西署管内</p><p>不審者</p><p>令和4年6月26日(日) 午後4時ころ</p><p>松山市空港通五丁目の路上</p><p>女性が車で移動中、付近をうろついていた男から凝視されたもの。</p><p>40歳位、やせ型、肩までの長さの黒髪、上衣:黒と白色のボーダー柄、濃い色のジーンズ、透明ビニール袋所持、徒歩</p></div>`)[0];
+            popup_b3efa45948a7030e9872f2d8fcbb9fdd.setContent(html_4ea4520403c66c8e7f078e5a3a130bc0);
+        
+
+        marker_02facd649f4a08f803703d71886d51f5.bindPopup(popup_b3efa45948a7030e9872f2d8fcbb9fdd)
+        ;
+
+        
+    
+    
+            var marker_08d98b05f2cba106e99cc22fb40e0540 = L.marker(
+                [34.056517, 133.011944],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_d39e4a2ec313110df33c7c7b65cccfe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_08d98b05f2cba106e99cc22fb40e0540.setIcon(icon_d39e4a2ec313110df33c7c7b65cccfe4);
+        
+    
+        var popup_307e81b16e9868ee4107ce6e46475b53 = L.popup({"maxWidth": 300});
+
+        
+            var html_2d6de85ef54494eab282b46690fdbddf = $(`<div id="html_2d6de85ef54494eab282b46690fdbddf" style="width: 100.0%; height: 100.0%;"><p>今治署管内</p><p>身体露出</p><p>令和4年6月25日(土) 午前10時30分ころ</p><p>今治市北鳥生町一丁目の屋外施設</p><p>男が、屋外施設でズボンを足元まで下ろしていたもの。</p><p>30歳位、中肉、黒髪、白色Tシャツ、白色半ズボン、帽子・メガネ・マスクなし、徒歩</p></div>`)[0];
+            popup_307e81b16e9868ee4107ce6e46475b53.setContent(html_2d6de85ef54494eab282b46690fdbddf);
+        
+
+        marker_08d98b05f2cba106e99cc22fb40e0540.bindPopup(popup_307e81b16e9868ee4107ce6e46475b53)
+        ;
+
+        
+    
+    
+            var marker_71e0c667911fe69cd6f5fc5249dc4502 = L.marker(
+                [33.828988, 132.761832],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_09f2fbfe1dd66c769274d1d5c2b147cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "\u5199\u771f\u64ae\u5f71\u7b49", "prefix": "glyphicon"}
+            );
+            marker_71e0c667911fe69cd6f5fc5249dc4502.setIcon(icon_09f2fbfe1dd66c769274d1d5c2b147cb);
+        
+    
+        var popup_29d687504b3886ff71470377325cc215 = L.popup({"maxWidth": 300});
+
+        
+            var html_e2047b7eb14fa273c8c510ba7049d45e = $(`<div id="html_e2047b7eb14fa273c8c510ba7049d45e" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>写真撮影等</p><p>令和4年6月25日(土) 午前9時35分ころ</p><p>松山市小栗四丁目の路上</p><p>小学生男児が移動中、道路沿いのアパート敷地内に立つ男から、スマートフォンを向けられ撮影されたもの。</p><p>20〜30歳位、中肉、身長160センチ位、黒色半袖Tシャツ、黒色長ズボン、鼻の下にできものがある、スマートフォン(白色、三つ目のカメラレンズ)所持、黒縁メガネ着用、徒歩</p></div>`)[0];
+            popup_29d687504b3886ff71470377325cc215.setContent(html_e2047b7eb14fa273c8c510ba7049d45e);
+        
+
+        marker_71e0c667911fe69cd6f5fc5249dc4502.bindPopup(popup_29d687504b3886ff71470377325cc215)
+        ;
+
+        
+    
+    
+            var marker_a825b9f3e1c2f9be34fbd122e98d4547 = L.marker(
+                [33.850954, 132.727614],
+                {}
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
+        
+    
+            var icon_490fecc5efe09dad496ca516a25ae45a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a825b9f3e1c2f9be34fbd122e98d4547.setIcon(icon_490fecc5efe09dad496ca516a25ae45a);
+        
+    
+        var popup_22d8bc457e40dfe372bc6200a00012a4 = L.popup({"maxWidth": 300});
+
+        
+            var html_0ce2c27b7bf76d0b4dce92a055c7bbf6 = $(`<div id="html_0ce2c27b7bf76d0b4dce92a055c7bbf6" style="width: 100.0%; height: 100.0%;"><p>松山西署管内</p><p>声かけ</p><p>令和4年6月24日(金) 午後7時ころ</p><p>松山市山西町の路上</p><p>女子中学生が路上にいたところ、自転車に乗車の男から「おじさんのこと知っとる?」「この辺に住んどるんかなと思って。じゃあ。」と声をかけられたもの。</p><p>60歳位、小肥、身長160センチ位、白髪、上下クリーム色作業着様つなぎ、ハット帽着用、色黒、顔に深いしわ、動きが遅くゆっくり歩く、自転車使用(前後カゴ付き(いずれかが茶色のカゴ、カバー付き))</p></div>`)[0];
+            popup_22d8bc457e40dfe372bc6200a00012a4.setContent(html_0ce2c27b7bf76d0b4dce92a055c7bbf6);
+        
+
+        marker_a825b9f3e1c2f9be34fbd122e98d4547.bindPopup(popup_22d8bc457e40dfe372bc6200a00012a4)
+        ;
+
+        
+    
+    
+            var marker_aff13bbfd0a938a9dd6884cbaa6e8b36 = L.marker(
                 [33.781942, 132.780621],
                 {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
         
     
-            var icon_1d4e0baae3865c8bc28fc69b92a39968 = L.AwesomeMarkers.icon(
+            var icon_13a43138f919fe976418fe0e53109bf8 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_1c69fc3f4915434700fbfb0a2e9f8fdd.setIcon(icon_1d4e0baae3865c8bc28fc69b92a39968);
+            marker_aff13bbfd0a938a9dd6884cbaa6e8b36.setIcon(icon_13a43138f919fe976418fe0e53109bf8);
         
     
-        var popup_c8e59443e9a37fe2d940d37be71214c8 = L.popup({"maxWidth": 300});
+        var popup_368176d410a6b04dca5aa1586ee1ea44 = L.popup({"maxWidth": 300});
 
         
-            var html_e308878be77076b7994053cdcce432e7 = $(`<div id="html_e308878be77076b7994053cdcce432e7" style="width: 100.0%; height: 100.0%;"><p>松山南署管内</p><p>身体露出</p><p>令和4年6月23日(木) 午後6時30分ころ</p><p>伊予郡砥部町重光の屋外施設</p><p>男が、屋外施設で下半身を露出していたもの。</p><p>20歳位、やせ型、身長170センチ位、中分けの髪型、メガネあり、徒歩</p></div>`)[0];
-            popup_c8e59443e9a37fe2d940d37be71214c8.setContent(html_e308878be77076b7994053cdcce432e7);
+            var html_e4a9161a69e0d2e220c4676df7273453 = $(`<div id="html_e4a9161a69e0d2e220c4676df7273453" style="width: 100.0%; height: 100.0%;"><p>松山南署管内</p><p>身体露出</p><p>令和4年6月23日(木) 午後6時30分ころ</p><p>伊予郡砥部町重光の屋外施設</p><p>男が、屋外施設で下半身を露出していたもの。</p><p>20歳位、やせ型、身長170センチ位、中分けの髪型、メガネあり、徒歩</p></div>`)[0];
+            popup_368176d410a6b04dca5aa1586ee1ea44.setContent(html_e4a9161a69e0d2e220c4676df7273453);
         
 
-        marker_1c69fc3f4915434700fbfb0a2e9f8fdd.bindPopup(popup_c8e59443e9a37fe2d940d37be71214c8)
+        marker_aff13bbfd0a938a9dd6884cbaa6e8b36.bindPopup(popup_368176d410a6b04dca5aa1586ee1ea44)
         ;
 
         
     
     
-            var marker_6411b40e80d882fd636bca0d43cd3cf0 = L.marker(
+            var marker_20303f9f137012cf725ea5bde553e3a4 = L.marker(
                 [33.831886, 132.749554],
                 {}
-            ).addTo(marker_cluster_adc2fea8b8e3b7d8046dcae416d78de5);
+            ).addTo(marker_cluster_b5bfca988636bef11ef00f4b1a3c3160);
         
     
-            var icon_99057522e81590b08afdcd498ac4081d = L.AwesomeMarkers.icon(
+            var icon_09e6c2cafd47013dd9225f3d0fdd829e = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_6411b40e80d882fd636bca0d43cd3cf0.setIcon(icon_99057522e81590b08afdcd498ac4081d);
+            marker_20303f9f137012cf725ea5bde553e3a4.setIcon(icon_09e6c2cafd47013dd9225f3d0fdd829e);
         
     
-        var popup_dfce6057534b1ab636a3fd0e8121c248 = L.popup({"maxWidth": 300});
+        var popup_d45a53a5e77cf37831d875349f3a095c = L.popup({"maxWidth": 300});
 
         
-            var html_a4bf210175453d677948c3dd574823d7 = $(`<div id="html_a4bf210175453d677948c3dd574823d7" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>身体露出</p><p>令和4年6月22日(水) 午後4時30分ころ</p><p>松山市竹原三丁目の路上</p><p>小学生女児がを歩行中、すれ違った男が無言でズボンを下ろし、下半身を露出させて見せつけてきたもの。</p><p>若い、やせ型、160〜165</p></div>`)[0];
-            popup_dfce6057534b1ab636a3fd0e8121c248.setContent(html_a4bf210175453d677948c3dd574823d7);
+            var html_33b4aef180469ad60b13d198af18664f = $(`<div id="html_33b4aef180469ad60b13d198af18664f" style="width: 100.0%; height: 100.0%;"><p>松山東署管内</p><p>身体露出</p><p>令和4年6月22日(水) 午後4時30分ころ</p><p>松山市竹原三丁目の路上</p><p>小学生女児がを歩行中、すれ違った男が無言でズボンを下ろし、下半身を露出させて見せつけてきたもの。</p><p>若い、やせ型、160〜165</p></div>`)[0];
+            popup_d45a53a5e77cf37831d875349f3a095c.setContent(html_33b4aef180469ad60b13d198af18664f);
         
 
-        marker_6411b40e80d882fd636bca0d43cd3cf0.bindPopup(popup_dfce6057534b1ab636a3fd0e8121c248)
+        marker_20303f9f137012cf725ea5bde553e3a4.bindPopup(popup_d45a53a5e77cf37831d875349f3a095c)
         ;
 
         
